@@ -1,0 +1,106 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+s}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: forestgreen;
+    padding: 10px;
+    color: #fff;
+}
+
+footer{
+    clear: both;
+}
+footer p{
+    text-align: center;
+}
+footer iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+/* regras para colunas e aparência do cabeçalho e menu */
+.logo{
+    float: left;
+    width: 40%;
+}
+header nav{
+    float: right;
+    width: 60%;
+}
+header{
+    height: 70px;
+}
+
+/* menu principal */
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li, header nav ul li a{
+    display: inline-block;
+}
+header nav ul li{
+    margin: 0 20px 0 0;
+}
+header nav ul li a{
+    background-color: #fff;
+    padding: 5px;
+    color: forestgreen;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    background-color: rgb(201, 83, 47);
+    color: #fff;
+}
+
+.conteudo{
+    /* Limpa a flutuação existente nos elementos do header */
+    clear: both;
+    padding: 20px;
+}
+
+.coluna1{
+    width: 25%;
+    float: left;
+    margin-bottom: 40px;
+}
+.coluna2{
+    width: 70%;
+    float: right;
+    margin-bottom: 40px;
+    border-left: 1px solid #777;
+    padding-left: 20px;
+}
+
+
+
+/* MODIFICA O COMPORTAMENTO DAS COLUNAS E menu 
+QUANDO ACESSADO NO CELULAR */
+@media screen and (max-width: 576px) {
+    .coluna1, .coluna2{
+        float: none;
+        width: 100%;
+    }
+    .coluna2{
+        padding: 0;
+        border: none;
+    }
+
+    .logo, header nav{
+        float: none;
+        width: 100%;
+    }
+    header{
+        height: auto;
+    }
+    .logo h1{
+        font-size: 1em;
+    }
+}
+            
